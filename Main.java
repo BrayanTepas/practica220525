@@ -19,5 +19,24 @@ public class Main {
         System.out.println("Resultado de la suma con un número negativo: " + result4);
 
         op.imprimirNumeroImpares(5);
+
+        Opcion opcion = Opcion.SUMA;
+        if (opcion == Opcion.SUMA) {
+            System.out.println("Operación seleccionada: suma");
+        }
+        switch (opcion) {
+            case SUMA:
+                System.out.println("Operación seleccionada: suma");
+                break;
+            case RESTA:
+                System.out.println("Operación seleccionada: resta");
+                break;
+            case MULTIPLICACION:
+                System.out.println("Operación seleccionada: multiplicación");
+                break;
+            case DIVISION:
+                System.out.println("Operación seleccionada: división");
+                break;
+        }
     }
 }
